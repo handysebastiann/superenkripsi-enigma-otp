@@ -5,7 +5,6 @@ A collection of classical and theoretical cryptographic systems implemented from
 ## 🚀 Features & Modules
 
 *   **🛡️ Superencryption Engine:** Combines multiple layers of classical cryptographic primitives (such as substitution, transposition, and rotor-based transformations) to build defense-in-depth security models.
-*   **🕵️‍♂️ Enigma Machine Simulator:** A software simulation of the historical rotor-based cipher machine, featuring configurable plugboards, selectable reflector types, and interchangeable gear rotors.
 *   **🔑 One-Time Pad (OTP):** A pure implementation of the Vernam cipher leveraging true random number generation, demonstrating perfect secrecy under Shannon's information theory.
 
 ## 🛠️ Tech Stack & Requirements
