@@ -4,6 +4,9 @@ ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 # =====================================================================
 # BAGIAN 1: FUNGSI SUBSTITUSI (HILL CIPHER 2x2)
+# Penjelasan: Hill Cipher mengganti huruf berdasarkan perkalian
+# matriks dengan pasangan angka dari plaintext.
+# Rumus: C = K × P mod 26
 # =====================================================================
 def mod_inverse(a, m=26):
     """Mencari invers perkalian modulo 26: (a * x) % 26 == 1"""
@@ -54,6 +57,8 @@ def hill_decrypt(ciphertext, key_matrix):
 
 # =====================================================================
 # BAGIAN 2: FUNGSI TRANSPOSISI (MYSZKOWSKI)
+# Penjelasan: Myszkowski mengubah posisi huruf berdasarkan peringkat
+# alfabet dari kata kunci. Huruf kembar mendapat peringkat yang sama.
 # =====================================================================
 def get_myszkowski_ranks(key):
     """Memberi nomor urut berdasarkan abjad (huruf kembar mendapat nomor sama)"""
@@ -115,6 +120,10 @@ def myszkowski_decrypt(ciphertext, key):
 
 # =====================================================================
 # EKSEKUSI UTAMA (HARDCODED)
+# Penjelasan: Bagian ini menjalankan seluruh proses, mulai dari
+# enkripsi Hill, enkripsi Myszkowski, hingga kedua tahap dekripsi.
+# Urutan enkripsi: Hill -> Myszkowski.
+# Urutan dekripsi: Myszkowski -> Hill.
 # =====================================================================
 if __name__ == "__main__":
     # --- DATA HARDCODE ---
