@@ -57,7 +57,7 @@ def get_hill_inverse_matrix(key_matrix):
 
 def hill_encrypt(text, key_matrix):
     n = len(key_matrix)
-    text = "".join(c for c in text.upper() if c in ALPHABET)
+    text = "".join(c for c in text.upper() if c in ALPHABET) # Uppercase and remove non-alphabetic characters
     # Tambah padding 'X' jika panjang teks bukan kelipatan n
     while len(text) % n != 0:
         text += 'X'
