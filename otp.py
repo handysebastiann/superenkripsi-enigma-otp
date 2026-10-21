@@ -36,12 +36,13 @@ def otp_xor_process(data_bytes, key_bytes):
 # EKSEKUSI UTAMA
 # =====================================================================
 if __name__ == "__main__":
-    # --- PLAINTEXT HARDCODE ---
-    plaintext = "KULIAHKRIPTO"
-    
     print("\n" + "="*68)
     print(" DEMO ONE-TIME PAD (OTP): MODULO 26 KLASIK & BITWISE XOR MODERN")
     print("="*68)
+    
+    # Input plaintext secara dinamis
+    plaintext = input("Masukkan Plaintext: ").strip().upper().replace(" ", "")
+    print("-" * 68)
     
     # 1. Demo OTP Klasik (Huruf A-Z)
     # Membuat kunci acak murni yang panjangnya SAMA PERSIS dengan plaintext
