@@ -23,9 +23,14 @@ cd superenkripsi-enigma-otp
 
 ## 📖 Usage Examples
 
-### Running the Script
+### Running the superenkripsi
 ```bash
-python main.py
+python superenkripsi.py
+```
+
+### Running the OTP (One Time-Pad)
+```bash
+python otp.py
 ```
 
 ## 🤝 Contributing
